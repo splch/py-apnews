@@ -1,9 +1,16 @@
 from setuptools import setup, find_packages
+from os import path
+
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md')) as f:
+    long_description = f.read()
 
 setup(
     name="apnews",
     version="0.1.1",
     description="A simple web scraper for Associated Press",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     author="Spencer Churchill",
     author_email="spence@duck.com",
     url="https://github.com/splch/py-apnews",
