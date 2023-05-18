@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="apnews",
-    version="0.1.0",
+    version="0.1.1",
     description="A simple web scraper for Associated Press",
     author="Spencer Churchill",
     author_email="spence@duck.com",
